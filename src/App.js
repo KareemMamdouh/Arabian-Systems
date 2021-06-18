@@ -1,11 +1,10 @@
 import React from 'react'
-
-import Home from 'pages/Home/Home'
 import './App.scss'
 import './i18n'
 import { Router, Route } from 'react-router-dom'
 import history from 'redux/_helpers/history'
 import { connect } from 'react-redux'
+import Home from 'pages/Home/Home'
 
 require('dotenv').config()
 
