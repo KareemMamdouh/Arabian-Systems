@@ -1,0 +1,103 @@
+@import 'Variables.scss';
+.Home {
+  header {
+    background-image: url('../../assets/images/Header_bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    z-index: 4;
+    .header-text {
+      position: relative;
+      z-index: 10;
+    }
+    .start-btn {
+      margin: 0 auto;
+      position: absolute;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      left: 50%;
+      bottom: -14px;
+      transform: translate(-50%);
+      z-index: 15;
+      outline: none;
+      // justify-content: center;
+      // align-items: center;
+    }
+  }
+  header:before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    position: absolute;
+    z-index: 5;
+  }
+  .how-it-works {
+    .steps {
+      background: #323e47;
+
+      > div {
+        width: 636px;
+        margin-left: 12%;
+      }
+    }
+    .steps-result {
+      background-image: url('../../assets/images/Red_Bg.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 250px;
+    }
+  }
+  .why-use-our-service {
+    background-color: #f6fbff;
+  }
+  .Get-prepared {
+    ul {
+      margin: 0;
+      padding: 0 20px;
+      list-style: none; /* Remove default bullets */
+    }
+    ul li {
+      padding: 2px 0;
+      list-style: none; /* Remove default bullets */
+      position: relative;
+    }
+    @at-root .AppLTR .Get-prepared li::before {
+      content: '\2022';
+      color: $primary-color !important ;
+      width: 20px;
+      font-size: 30px;
+      // font-weight: bold;
+      left: -15px;
+      position: absolute;
+      top: -5px;
+    }
+    @at-root .AppRTL .Get-prepared li::before {
+      content: '\2022';
+      color: $primary-color !important ;
+      width: 20px;
+      font-size: 30px;
+      // font-weight: bold;
+      right: -15px;
+      position: absolute;
+      top: -5px;
+    }
+  }
+  .required-documentation {
+    background-color: #f6fbff;
+    @media (min-width: 0px) and (max-width: 767.98px) {
+      h5 {
+        font-size: 12px !important;
+      }
+      p {
+        font-size: 11px !important;
+      }
+    }
+  }
+}
