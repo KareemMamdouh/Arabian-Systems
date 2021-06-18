@@ -41,9 +41,13 @@
     .steps {
       background: #323e47;
 
-      > div {
+      @at-root .AppLTR .how-it-works .steps > div {
         width: 636px;
         margin-left: 12%;
+      }
+      @at-root .AppRTL .how-it-works .steps > div {
+        width: 636px;
+        margin-right: 12%;
       }
     }
     .steps-result {
